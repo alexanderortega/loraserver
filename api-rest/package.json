@@ -4,7 +4,7 @@
   "description": "Proyecto de API RestFull con Node.js y Express",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alex Ortega",
@@ -16,7 +16,8 @@
     "express": "^4.17.1",
     "jwt-simple": "^0.5.6",
     "moment": "^2.24.0",
-    "mongoose": "^5.8.11"
+    "mongoose": "^5.8.11",
+    "mqtt": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

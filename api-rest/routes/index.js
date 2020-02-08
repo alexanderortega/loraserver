@@ -2,6 +2,7 @@
 
 const express = require('express')
 const productCtrl = require('../controllers/product')
+const NodoCtrl = require('../controllers/nodo')
 const api = express.Router()
 
 api.get('/product', productCtrl.getProducts)
@@ -10,4 +11,7 @@ api.post('/product', productCtrl.saveProduct)
 api.put('/product/:productId', productCtrl.updateProduct)
 api.delete('/product/:productId' , productCtrl.deleteProduct)
 
-module.exports = api 
+
+api.get('/nodo/:nodoId', NodoCtrl.getNodo)
+
+module.exports = api
