@@ -17,6 +17,9 @@ mongoose.connect(config.db, (err, res) => {
       mqttTTN.setMqttConnection(()=>{
           mqttTTN.setTopic('nodo1');
           mqttTTN.setTopic('nodo2');
+          mqttTTN.setTopic('nodo3');
+          mqttTTN.setTopic('nodo4');
+          mqttTTN.setTopic('nodo5');
       })
   })
 })
