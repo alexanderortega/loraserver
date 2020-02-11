@@ -2,8 +2,8 @@
 
 var mqtt = require ('mqtt');
 var options = {
-    username: 'b1j9j9i8e4g6f5c2b1',
-    password: 'ttn-account-v2.Qu0YFpSZUDxScF0ZqvmonxungzV-vMVsyIrSYWXwoVM'
+    username: 'prueba_de_cobertura_udenar',
+    password: 'ttn-account-v2.u7s8yyj4bVW7AO95VlKJO7nZFsVFKn7bSsJoe77YDWs'
 };
 
 var client = mqtt.connect('mqtt://us-west.thethings.network:1883',options);
@@ -27,7 +27,7 @@ function setMqttConnection(next){
 }
 
 function setTopic(deviceId){
-    client.subscribe(`b1j9j9i8e4g6f5c2b1/devices/${deviceId}/up`, function() {console.log('Suscrito a ',deviceId)});
+    client.subscribe(`prueba_de_cobertura_udenar/devices/${deviceId}/up`, function() {console.log('Suscrito a ',deviceId)});
 }
 
 module.exports = {

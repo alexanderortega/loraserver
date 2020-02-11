@@ -15,8 +15,8 @@ mongoose.connect(config.db, (err, res) => {
   app.listen(config.port, () => {
     console.log(`API REST corriendo en http://localhost:${config.port}`)
       mqttTTN.setMqttConnection(()=>{
-          mqttTTN.setTopic('prueba1');
-          mqttTTN.setTopic('prueba2');
+          mqttTTN.setTopic('nodo1');
+          mqttTTN.setTopic('nodo2');
       })
   })
 })
