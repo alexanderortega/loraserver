@@ -34,7 +34,7 @@ function pushData(message){
   var messageObject = JSON.parse(message);
 
   Nodo.findOneAndUpdate({dev_id: messageObject.dev_id},  { $push: { data: messageObject } }, (err, nodoUpdated) =>{
-    if (err) console.log({message: `Error al actualizar el producto: ${err}`})
+    if (err) console.log({message: `Error al actualizar el nodo: ${err}`})
     console.log({ nodo: nodoUpdated })
   } )
 
